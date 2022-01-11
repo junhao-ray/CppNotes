@@ -19,3 +19,15 @@
 6. swap(p, q)
 
 7. p.swap(q)
+
+## method thar only __shared_ptr__ owns
+
+1. make_shared\<T> (args) args is used to initialize the object
+
+2. shared_ptr\<T> p(q) p is a copy of q, this opration will increase the counter of q
+
+3. p = q
+
+4. p.unique() return true if p.use_count = 1
+
+5. p.use_count() return the number of smart pointers that share the same object with p
