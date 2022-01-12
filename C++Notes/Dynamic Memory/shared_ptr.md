@@ -31,3 +31,17 @@
 4. p.unique() return true if p.use_count = 1
 
 5. p.use_count() return the number of smart pointers that share the same object with p
+
+usually we use auto to define an object that saves the return of make_shared since it's convinient
+
+whether using a counter or other data structure to record the number of pointers depends on standard library
+
+### 如果将智能指针放入容器，排序后不再需要某些容器，记得erase
+
+### reason why using dynamic memory
+
+1. program does not known how many objects need to use
+
+2. program does not known what the type of object need to ues exactly
+
+3. program need to share data among multiple objects
